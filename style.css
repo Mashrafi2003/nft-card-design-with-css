@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  height: 550px;
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+}
+.nft-header {
+  font-size: 18px;
+  color: white;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.time-portion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.image {
+  height: 260px;
+  width: 260px;
+  border-radius: 15px;
+  margin: 19px;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.card:hover .image {
+  background-color: gray;
+}
+
+.nft-body {
+  color: rgb(76, 97, 126);
+  font-weight: 700;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.etherium-desc {
+  margin-left: 20px;
+  color: #00fff8;
+}
+.clock-desc {
+  margin-right: 20px;
+  color: #8bacd9;
+  padding-top: -5px;
+}
+.divider {
+  width: 260px;
+  border: 0;
+  height: 0;
+  margin-bottom: 30px;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  border-top: 1px solid gray;
+}
+.img-avatar {
+  height: 30px;
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.creator-component {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 15px;
+}
+.creator-desc {
+  color: rgb(76, 97, 126);
+}
+.creator-name {
+  color: white;
+}
+.creator-name:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
